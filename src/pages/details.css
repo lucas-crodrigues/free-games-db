@@ -1,0 +1,16 @@
+.gamesList {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.pageTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.pageTitle img {
+  height: 5rem;
+  width: 5rem;
+}
