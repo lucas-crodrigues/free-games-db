@@ -1,0 +1,15 @@
+.pages {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pageLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pagesIcon {
+  height: 5rem;
+  width: 5rem;
+}
