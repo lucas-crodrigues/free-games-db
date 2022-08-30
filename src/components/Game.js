@@ -3,10 +3,6 @@ import "./Game.css";
 const Game = (props) => {
   const { game } = props;
 
-  const handleClick = (e) => {
-    e.target.previousSibling.classList.toggle('show');
-  };
-
   return (
     <>
     <div className="gameCard">
@@ -15,14 +11,14 @@ const Game = (props) => {
           <img className="gamePic" src={game.image} />
           {game.title}
         </a>
-        <p className="gameType">{game.type}</p>
+        <p className="gameType" id={`${game.type.split(' ')[0]}`}>{game.type}</p>
       </div>
-      <div className="info show">
+      <details className="info">
+      <summary>More Info</summary>
         <p style={{whiteSpace: "pre-wrap"}} >{game.instructions}</p>
         <small>Works with: {game.platforms}</small>
         <small>Ends at: {game.end_date}</small>
-      </div>
-      <button type="button" onClick={handleClick}>Toggle Info</button>
+      </details>
     </div>
     </>
   );
