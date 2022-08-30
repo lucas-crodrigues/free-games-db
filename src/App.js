@@ -38,6 +38,7 @@ function App() {
         <Route path="/console" element={<Games key={"gamesPage"} gameList={consoleGames} icon={consoleIcon} title={'Console Content'} />} />
         <Route path="/mobile" element={<Games key={"gamesPage"} gameList={mobileGames} icon={mobileIcon} title={'Mobile Content'} />} />
       </Routes>
+      <small>Powered by: <a href="https://www.gamerpower.com/api-read" rel="noopener noreferrer" target="_blank">GamerPower</a></small>
     </div>
   );
 }
