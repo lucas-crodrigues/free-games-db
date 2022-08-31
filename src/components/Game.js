@@ -8,7 +8,7 @@ const Game = (props) => {
     <div className="gameCard">
       <div className="gameTitle">
         <a href={game.open_giveaway} rel="noopener noreferrer" target="_blank">
-          <img className="gamePic" src={game.image} />
+          <img className="gamePic" src={game.image} alt={`Game ${game.title}`} />
           {game.title}
         </a>
         <p className="gameType" id={`${game.type.split(' ')[0]}`}>{game.type}</p>
