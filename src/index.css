@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(54, 54, 54);
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
   color: white;
 }
 
@@ -17,5 +18,5 @@ a {
 }
 
 a:hover {
-  color: rgb(171, 0, 0);
+  filter: brightness(0.8);
 }
