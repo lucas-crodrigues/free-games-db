@@ -30,6 +30,8 @@ const Games = (props) => {
   );
 };
 
+/* eslint-disable react/forbid-prop-types */
+
 Games.propTypes = {
   gameList: PropTypes.arrayOf(PropTypes.object).isRequired,
   icon: PropTypes.string.isRequired,

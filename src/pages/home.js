@@ -115,6 +115,8 @@ const Home = (props) => {
   );
 };
 
+/* eslint-disable react/forbid-prop-types */
+
 Home.propTypes = {
   games: PropTypes.arrayOf(PropTypes.object).isRequired,
   pcGames: PropTypes.arrayOf(PropTypes.object).isRequired,
