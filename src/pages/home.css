@@ -27,12 +27,12 @@
   border-bottom: 1rem solid rgba(0, 0, 0, 0.2);
 }
 
-.stats > div:nth-of-type(even){
-  background-color: rgba(0, 255, 255, 0.2);
+.stats div {
+  width: calc(100vw / 7);
 }
 
-.stats div {
-  width: calc(100vw/7);
+.stats > div:nth-of-type(even) {
+  background-color: rgba(0, 255, 255, 0.2);
 }
 
 .stats div small {
@@ -43,7 +43,6 @@
   margin-top: 0;
   font-size: 4vw;
 }
-
 
 .pages {
   display: flex;
@@ -91,7 +90,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  font-size: clamp(0.5rem, 4vw, 2rem);
+  font-size: clamp(0.5rem, 4vw, 2rem); /* stylelint-disable-line */
   height: 100%;
   width: 100%;
 }

@@ -6,8 +6,8 @@ const options = {
   url: 'https://gamerpower.p.rapidapi.com/api/giveaways',
   headers: {
     'X-RapidAPI-Key': '62ec6365c4mshe35f6cf778529e2p16bc36jsn4f84e7881ace',
-    'X-RapidAPI-Host': 'gamerpower.p.rapidapi.com'
-  }
+    'X-RapidAPI-Host': 'gamerpower.p.rapidapi.com',
+  },
 };
 
 export const getGames = createAsyncThunk(

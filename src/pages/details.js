@@ -1,7 +1,8 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import Game from "../components/Game";
-import "./details.css";
+import PropTypes from 'prop-types';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import Game from '../components/Game';
+import './details.css';
 
 const Games = (props) => {
   const { gameList, icon, title } = props;
@@ -9,11 +10,11 @@ const Games = (props) => {
   return (
     <>
       <div className="header">
-        <NavLink to="/" >‹</NavLink>
+        <NavLink to="/">‹</NavLink>
         <h1>Free Games DB</h1>
       </div>
       <div className="pageTitle">
-        <img src={icon} alt="logo"/>
+        <img src={icon} alt="logo" />
         <h2>{title}</h2>
       </div>
       <div className="filters">
@@ -23,10 +24,16 @@ const Games = (props) => {
         <NavLink to="/mobile">All Mobile Content</NavLink>
       </div>
       <div className="gamesList">
-        {gameList.map(game => <Game key={game.id} game={game} />)}
+        {gameList.map((game) => <Game key={game.id} game={game} />)}
       </div>
     </>
   );
+};
+
+Games.propTypes = {
+  gameList: PropTypes.arrayOf(PropTypes.object).isRequired,
+  icon: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 export default Games;
