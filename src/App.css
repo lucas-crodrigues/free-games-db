@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+}
+
+.header a {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.header h1 {
+  margin: auto;
+}

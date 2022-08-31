@@ -1,0 +1,27 @@
+.active {
+  text-decoration: underline;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.gamesList {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.pageTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+}
+
+.pageTitle img {
+  filter: invert();
+  height: 5rem;
+  width: 5rem;
+}
