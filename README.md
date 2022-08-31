@@ -17,11 +17,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live Demo
 
- [Free Games DB](https://stellular-kataifi-d33ffc.netlify.app/)
+ [Free Games DB](https://peppy-smakager-d62680.netlify.app/)
 
  ## Video Preview
 
- [N/A](#)
+ [Loom Video](https://www.loom.com/share/bfc5132e16bb4bde89f4cc427a3bb289)
 
  ## Getting Started
 
