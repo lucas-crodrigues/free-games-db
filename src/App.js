@@ -21,22 +21,38 @@ function App() {
     }
   });
 
-  const filterList = (data, query) => {
+  const filterListPlatform = (data, query) => {
     return data.filter(name => name.platforms.toString().toUpperCase().includes(query.toUpperCase()));
   };
+  const filterListType = (data, query) => {
+    return data.filter(name => name.type.toString().toUpperCase().includes(query.toUpperCase()));
+  };
 
-  const pcGames = filterList(games, 'PC');
-  const consoleGames = filterList(games, 'xbox' || 'playstation' || 'nintendo');
-  const mobileGames = filterList(games, 'android' || 'ios');
+  const pcGames = filterListPlatform(games, 'PC');
+  const consoleGames = filterListPlatform(games, 'xbox' || 'playstation' || 'nintendo');
+  const mobileGames = filterListPlatform(games, 'android' || 'ios');
+  const allGames = filterListType(games, 'Game');
+  const allDLC = filterListType(games, 'DLC');
+  const allEarly = filterListType(games, 'Early Access');
 
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Home key={"games"} games={games} pcGames={pcGames} consoleGames={consoleGames} mobileGames={mobileGames} />} />
-        <Route path="/games" element={<Games key={"gamesPage"} gameList={games} icon={gameIcon} title={'All Content'} />} />
-        <Route path="/pc" element={<Games key={"gamesPage"} gameList={pcGames} icon={pcIcon} title={'PC Content'} />} />
-        <Route path="/console" element={<Games key={"gamesPage"} gameList={consoleGames} icon={consoleIcon} title={'Console Content'} />} />
-        <Route path="/mobile" element={<Games key={"gamesPage"} gameList={mobileGames} icon={mobileIcon} title={'Mobile Content'} />} />
+        <Route path="/" element={
+          <Home key={"games"} 
+            games={games} 
+            pcGames={pcGames} 
+            consoleGames={consoleGames} 
+            mobileGames={mobileGames} 
+            allGames={allGames}
+            allDLC={allDLC}
+            allEarly={allEarly}
+          />} 
+        />
+        <Route path="/games/*" element={<Games key={"gamesPage"} gameList={games} icon={gameIcon} title={'All Content'} />} />
+        <Route path="/pc/*" element={<Games key={"gamesPage"} gameList={pcGames} icon={pcIcon} title={'PC Content'} />} />
+        <Route path="/console/*" element={<Games key={"gamesPage"} gameList={consoleGames} icon={consoleIcon} title={'Console Content'} />} />
+        <Route path="/mobile/*" element={<Games key={"gamesPage"} gameList={mobileGames} icon={mobileIcon} title={'Mobile Content'} />} />
       </Routes>
       <small>Powered by: <a href="https://www.gamerpower.com/api-read" rel="noopener noreferrer" target="_blank">GamerPower</a></small>
     </div>
