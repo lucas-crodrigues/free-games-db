@@ -1,17 +1,13 @@
 .gameCard {
   display: flex;
   flex-direction: column;
-  background-color: #282828;
-  border: 1px solid rgb(171, 0, 0);
+  background-color: #28282880;
+  border: 1px solid white;
   padding: 0 0.5rem 0.5rem 0.5rem;
   height: auto;
   width: 19rem;
   margin: 0.5rem;
   transition: all 0.5s;
-}
-
-.gameCard:hover {
-  filter: brightness(0.8);
 }
 
 .gameTitle a {
@@ -56,5 +52,5 @@ summary {
 }
 
 summary:hover {
-  color: rgb(171, 0, 0);
+  color: orangered;
 }
