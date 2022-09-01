@@ -1,20 +1,100 @@
-import PropTypes from 'prop-types';
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import Game from '../components/Game';
+import {
+  getGames,
+  noFilter,
+  filterPC,
+  filterConsole,
+  filterMobile,
+  filterGame,
+  filterDLC,
+  filterEarly,
+} from '../redux/games/fetchGames';
 import logo from '../art/logo.svg';
 import './home.css';
 
-const Home = (props) => {
-  const {
-    games, pcGames, consoleGames, mobileGames, allGames, allDLC, allEarly,
-  } = props;
+function Home() {
+  const games = useSelector((state) => state.games.games);
+  const filteredGames = useSelector((state) => state.games.filteredGames);
+  const status = useSelector((state) => state.games.status);
+  const filter = useSelector((state) => state.games.filter);
+  const dispatch = useDispatch();
+
+  React.useEffect(() => {
+    if (!games.length) {
+      dispatch(getGames());
+    }
+  });
+
+  let content;
+  if (status === 'loading') {
+    content = <p>Loading</p>;
+  }
+  if (status === 'succeeded') {
+    content = filteredGames.map((game) => (
+      <Link key={game.id} to={`/${game.id}`}>
+        <Game game={game} />
+      </Link>
+    ));
+  }
+
+  const handleChange = (e) => {
+    switch (e.target.value) {
+      case 'all-content':
+        dispatch(noFilter());
+        break;
+      case 'pc-content':
+        dispatch(filterPC());
+        break;
+      case 'console-content':
+        dispatch(filterConsole());
+        break;
+      case 'mobile-content':
+        dispatch(filterMobile());
+        break;
+      case 'all-games':
+        dispatch(filterGame());
+        break;
+      case 'all-dlc':
+        dispatch(filterDLC());
+        break;
+      case 'all-early':
+        dispatch(filterEarly());
+        break;
+      default:
+        break;
+    }
+  };
+
+  const filterListPlatform = (data, query) => (
+    data.filter((name) => name.platforms.toString().toUpperCase().includes(query.toUpperCase()))
+  );
+  const filterListType = (data, query) => (
+    data.filter((name) => name.type.toString().toUpperCase().includes(query.toUpperCase()))
+  );
+
+  const pcGames = filterListPlatform(games, 'PC');
+  const consoleGames = filterListPlatform(games, 'xbox' || 'playstation' || 'nintendo');
+  const mobileGames = filterListPlatform(games, 'android' || 'ios');
+  const allGames = filterListType(games, 'Game');
+  const allDLC = filterListType(games, 'DLC');
+  const allEarly = filterListType(games, 'Early Access');
 
   return (
     <>
       <div className="homePage">
         <div className="header">
-          <div className="invisible" />
-          <h1>Free Games DB</h1>
+          <select defaultValue={filter} onChange={handleChange}>
+            <option value="all-content">All Content</option>
+            <option value="pc-content">PC Content</option>
+            <option value="console-content">Console Content</option>
+            <option value="mobile-content">Mobile Content</option>
+            <option value="all-games">All Full Games</option>
+            <option value="all-dlc">All DLCs</option>
+            <option value="all-early">All Early Access</option>
+          </select>
         </div>
         <div className="logo">
           <img src={logo} alt="logo" />
@@ -26,7 +106,7 @@ const Home = (props) => {
               <small>
                 All
                 <br />
-                games
+                Content
               </small>
               <p>{games.length}</p>
             </div>
@@ -34,7 +114,7 @@ const Home = (props) => {
               <small>
                 PC
                 <br />
-                games
+                Content
               </small>
               <p>{pcGames.length}</p>
             </div>
@@ -42,7 +122,7 @@ const Home = (props) => {
               <small>
                 Console
                 <br />
-                games
+                Content
               </small>
               <p>{consoleGames.length}</p>
             </div>
@@ -50,7 +130,7 @@ const Home = (props) => {
               <small>
                 Mobile
                 <br />
-                games
+                Content
               </small>
               <p>{mobileGames.length}</p>
             </div>
@@ -80,51 +160,10 @@ const Home = (props) => {
             </div>
           </div>
         </div>
-        <div className="pages">
-          <div className="gameContent page">
-            <NavLink to="/games" className="pageLink">
-              All Free Content:
-              {' '}
-              {games.length}
-            </NavLink>
-          </div>
-          <div className="pcContent page">
-            <NavLink to="/pc" className="pageLink">
-              All PC Content:
-              {' '}
-              {pcGames.length}
-            </NavLink>
-          </div>
-          <div className="consoleContent page">
-            <NavLink to="/console" className="pageLink">
-              All Console Content:
-              {' '}
-              {consoleGames.length}
-            </NavLink>
-          </div>
-          <div className="mobileContent page">
-            <NavLink to="/mobile" className="pageLink">
-              All Mobile Content:
-              {' '}
-              {mobileGames.length}
-            </NavLink>
-          </div>
-        </div>
+        <div className="gameList">{content}</div>
       </div>
     </>
   );
-};
-
-/* eslint-disable react/forbid-prop-types */
-
-Home.propTypes = {
-  games: PropTypes.arrayOf(PropTypes.object).isRequired,
-  pcGames: PropTypes.arrayOf(PropTypes.object).isRequired,
-  consoleGames: PropTypes.arrayOf(PropTypes.object).isRequired,
-  mobileGames: PropTypes.arrayOf(PropTypes.object).isRequired,
-  allGames: PropTypes.arrayOf(PropTypes.object).isRequired,
-  allDLC: PropTypes.arrayOf(PropTypes.object).isRequired,
-  allEarly: PropTypes.arrayOf(PropTypes.object).isRequired,
-};
+}
 
 export default Home;

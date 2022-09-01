@@ -1,41 +1,32 @@
-import PropTypes from 'prop-types';
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import Game from '../components/Game';
-import './details.css';
+import { useParams, Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { getGames } from '../redux/games/fetchGames';
 
-const Games = (props) => {
-  const { gameList, icon, title } = props;
+function Details() {
+  const params = useParams();
+  const gamesD = useSelector((state) => state.games.games);
+  const dispatchD = useDispatch();
+
+  React.useEffect(() => {
+    if (!gamesD.length) {
+      dispatchD(getGames());
+    }
+  });
+
+  const gamesArr = gamesD.filter((game) => game.id === params.id);
+  const game = gamesArr[0];
 
   return (
     <>
-      <div className="header">
-        <NavLink to="/">‹</NavLink>
-        <h1>Free Games DB</h1>
-      </div>
-      <div className="pageTitle">
-        <img src={icon} alt="logo" />
-        <h2>{title}</h2>
-      </div>
-      <div className="filters">
-        <NavLink to="/games">All Free Content</NavLink>
-        <NavLink to="/pc">All PC Content</NavLink>
-        <NavLink to="/console">All Console Content</NavLink>
-        <NavLink to="/mobile">All Mobile Content</NavLink>
-      </div>
-      <div className="gamesList">
-        {gameList.map((game) => <Game key={game.id} game={game} />)}
+      <div className="detailsPage">
+        <header>
+          <Link to="/">‹</Link>
+        </header>
+        <img src={game.image} alt={`Game ${game.title}`} />
       </div>
     </>
   );
-};
+}
 
-/* eslint-disable react/forbid-prop-types */
-
-Games.propTypes = {
-  gameList: PropTypes.arrayOf(PropTypes.object).isRequired,
-  icon: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-};
-
-export default Games;
+export default Details;

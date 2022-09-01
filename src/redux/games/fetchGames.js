@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
@@ -22,16 +23,98 @@ export const getGames = createAsyncThunk(
   },
 );
 
-const initialState = [];
-
 export const gameSlice = createSlice({
   name: 'games',
-  initialState,
-  reducers: {},
+  initialState: {
+    games: [],
+    filteredGames: [],
+    filter: 'all-content',
+    status: 'idle',
+  },
+  reducers: {
+    noFilter(state) {
+      return ({
+        ...state,
+        filteredGames: state.games,
+        filter: 'all-content',
+      });
+    },
+    filterPC(state) {
+      return ({
+        ...state,
+        filteredGames: state.games.filter((name) => (
+          name.platforms.toString().toLowerCase().includes('pc')
+        )),
+        filter: 'pc-content',
+      });
+    },
+    filterConsole(state) {
+      return ({
+        ...state,
+        filteredGames: state.games.filter((name) => (
+          name.platforms.toString().toLowerCase().includes('xbox' || 'playstation' || 'nintendo')
+        )),
+        filter: 'console-content',
+      });
+    },
+    filterMobile(state) {
+      return ({
+        ...state,
+        filteredGames: state.games.filter((name) => (
+          name.platforms.toString().toLowerCase().includes('android' || 'ios')
+        )),
+        filter: 'mobile-content',
+      });
+    },
+    filterGame(state) {
+      return ({
+        ...state,
+        filteredGames: state.games.filter((name) => (
+          name.type.toString().toLowerCase().includes('game')
+        )),
+        filter: 'all-games',
+      });
+    },
+    filterDLC(state) {
+      return ({
+        ...state,
+        filteredGames: state.games.filter((name) => (
+          name.type.toString().toLowerCase().includes('dlc')
+        )),
+        filter: 'all-dlc',
+      });
+    },
+    filterEarly(state) {
+      return ({
+        ...state,
+        filteredGames: state.games.filter((name) => (
+          name.type.toString().toLowerCase().includes('early access')
+        )),
+        filter: 'all-early',
+      });
+    },
+  },
   extraReducers(builder) {
     builder
-      .addCase(getGames.fulfilled, (state, action) => action.payload);
+      .addCase(getGames.pending, (state) => {
+        state.status = 'loading';
+      })
+      .addCase(getGames.fulfilled, (state, action) => {
+        state.status = 'succeeded';
+        state.games = action.payload;
+        state.filteredGames = action.payload;
+      });
   },
 });
+
+export const {
+  noFilter,
+  filterPC,
+  filterConsole,
+  filterMobile,
+  filterGame,
+  filterDLC,
+  filterEarly,
+} = gameSlice.actions;
 
 export default gameSlice.reducer;
