@@ -8,24 +8,14 @@ const Game = (props) => {
     <>
       <div className="gameCard">
         <div className="gameTitle">
-          <a href={game.open_giveaway} rel="noopener noreferrer" target="_blank">
-            <img className="gamePic" src={game.image} alt={`Game ${game.title}`} />
-            {game.title}
-          </a>
+          <img className="gamePic" src={game.image} alt={`Game ${game.title}`} />
+          {game.title}
           <p className="gameType" id={`${game.type.split(' ')[0]}`}>{game.type}</p>
-        </div>
-        <details className="info">
-          <summary>More Info</summary>
-          <p style={{ whiteSpace: 'pre-wrap' }}>{game.instructions}</p>
           <small>
-            Works with:
+            Works with:&nbsp;
             {game.platforms}
           </small>
-          <small>
-            Ends at:
-            {game.end_date}
-          </small>
-        </details>
+        </div>
       </div>
     </>
   );
