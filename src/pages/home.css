@@ -6,7 +6,6 @@
 .logo {
   filter: invert();
   margin: auto;
-  margin-top: 3rem;
   max-width: 700px;
 }
 
@@ -24,7 +23,6 @@
 
 .stats {
   display: flex;
-  border-bottom: 1rem solid rgba(0, 0, 0, 0.2);
 }
 
 .stats div {
@@ -44,10 +42,18 @@
   font-size: 4vw;
 }
 
-.pages {
+.gameList {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+}
+
+.gameList a {
+  flex: 50% 1;
+  max-width: 50vw;
+}
+
+.gameList>a:nth-child(4n-1), .gameList>a:nth-child(4n-2) {
+  background-color: rgba(0, 255, 255, 0.2);
 }
 
 .gameContent {
@@ -98,4 +104,38 @@
 .pagesIcon {
   height: 5rem;
   width: 5rem;
+}
+
+@media (min-width: 786px) {
+  .main h3 {
+    font-size: 2.5vw;
+  }
+
+  .stats div small {
+    font-size: 1.5vw;
+  }
+
+  .stats div p {
+    font-size: 2vw;
+  }
+
+  .gameList a {
+    flex: 25% 1;
+    max-width: 25vw;
+  }
+
+  .gameList>a:nth-child(4n-1), .gameList>a:nth-child(4n-2) {
+    background-color: transparent;
+  }
+
+  .gameList>a:nth-child(8n-7),
+  .gameList>a:nth-child(8n-5),
+  .gameList>a:nth-child(8n-2),
+  .gameList>a:nth-child(8n) {
+    background-color: rgba(0, 255, 255, 0.2);
+  }
+
+  .gamePic {
+    width: 25vw;
+  }
 }

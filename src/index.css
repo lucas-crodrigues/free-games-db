@@ -1,3 +1,7 @@
+html {
+  overflow-y: overlay;
+}
+
 body {
   margin: 0;
   font-family:
@@ -16,6 +20,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: rgb(2, 0, 36) linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
   color: white;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  height: 100%;
 }
 
 a {
