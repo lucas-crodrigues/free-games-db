@@ -52,7 +52,8 @@
   max-width: 50vw;
 }
 
-.gameList>a:nth-child(4n-1), .gameList>a:nth-child(4n-2) {
+.gameList > a:nth-child(4n-1),
+.gameList > a:nth-child(4n-2) {
   background-color: rgba(0, 255, 255, 0.2);
 }
 
@@ -124,14 +125,15 @@
     max-width: 25vw;
   }
 
-  .gameList>a:nth-child(4n-1), .gameList>a:nth-child(4n-2) {
+  .gameList > a:nth-child(4n-1),
+  .gameList > a:nth-child(4n-2) {
     background-color: transparent;
   }
 
-  .gameList>a:nth-child(8n-7),
-  .gameList>a:nth-child(8n-5),
-  .gameList>a:nth-child(8n-2),
-  .gameList>a:nth-child(8n) {
+  .gameList > a:nth-child(8n-7),
+  .gameList > a:nth-child(8n-5),
+  .gameList > a:nth-child(8n-2),
+  .gameList > a:nth-child(8n) {
     background-color: rgba(0, 255, 255, 0.2);
   }
 

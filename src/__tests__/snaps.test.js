@@ -31,7 +31,7 @@ describe('check snapshot of pages', () => {
         </Provider>
       </React.StrictMode>,
     );
-    
+
     expect(component).toMatchSnapshot();
   });
 });
