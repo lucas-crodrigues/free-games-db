@@ -3,8 +3,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import React from 'react';
 import store from '../redux/configureStore';
-import Home from '../pages/Home.js';
-import Details from '../pages/Details.js';
+import Home from '../pages/Home';
+import Details from '../pages/Details';
 
 describe('check snapshot of pages', () => {
   test('check snapshot of home', () => {
