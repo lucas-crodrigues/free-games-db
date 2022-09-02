@@ -1,0 +1,52 @@
+.gameCard {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s;
+  height: 100%;
+}
+
+.gameTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.gameType {
+  width: min-content;
+  padding: 0 0.5rem;
+  border-radius: 0.2rem;
+  margin: 1rem auto;
+}
+
+#Game {
+  background-color: green;
+}
+
+#DLC {
+  background-color: orangered;
+}
+
+#Early {
+  background-color: blueviolet;
+}
+
+.gamePic {
+  width: 50vw;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+summary {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+summary:hover {
+  color: orangered;
+}

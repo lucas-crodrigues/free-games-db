@@ -1,0 +1,143 @@
+.invisible {
+  height: 75px;
+  width: 43px;
+}
+
+.logo {
+  filter: invert();
+  margin: auto;
+  max-width: 700px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main h3 {
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 5vw;
+}
+
+.stats {
+  display: flex;
+}
+
+.stats div {
+  width: calc(100vw / 7);
+}
+
+.stats > div:nth-of-type(even) {
+  background-color: rgba(0, 255, 255, 0.2);
+}
+
+.stats div small {
+  font-size: 3vw;
+}
+
+.stats div p {
+  margin-top: 0;
+  font-size: 4vw;
+}
+
+.gameList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gameList a {
+  flex: 50% 1;
+  max-width: 50vw;
+}
+
+.gameList > a:nth-child(4n-1),
+.gameList > a:nth-child(4n-2) {
+  background-color: rgba(0, 255, 255, 0.2);
+}
+
+.gameContent {
+  background-image: url(../art/game_icon.svg);
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.pcContent {
+  background-image: url(../art/pc_icon.svg);
+  background-repeat: no-repeat;
+}
+
+.consoleContent {
+  background-image: url(../art/console_icon.svg);
+  background-repeat: no-repeat;
+}
+
+.mobileContent {
+  background-image: url(../art/mobile_icon.svg);
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.page {
+  width: 40vw;
+  height: 40vw;
+  max-width: 260px;
+  max-height: 260px;
+  transition: all 0.5s;
+  padding: 3vw;
+}
+
+.page:hover {
+  transform: scale(1.04);
+}
+
+.pageLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: clamp(0.5rem, 4vw, 2rem); /* stylelint-disable-line */
+  height: 100%;
+  width: 100%;
+}
+
+.pagesIcon {
+  height: 5rem;
+  width: 5rem;
+}
+
+@media (min-width: 786px) {
+  .main h3 {
+    font-size: 2.5vw;
+  }
+
+  .stats div small {
+    font-size: 1.5vw;
+  }
+
+  .stats div p {
+    font-size: 2vw;
+  }
+
+  .gameList a {
+    flex: 25% 1;
+    max-width: 25vw;
+  }
+
+  .gameList > a:nth-child(4n-1),
+  .gameList > a:nth-child(4n-2) {
+    background-color: transparent;
+  }
+
+  .gameList > a:nth-child(8n-7),
+  .gameList > a:nth-child(8n-5),
+  .gameList > a:nth-child(8n-2),
+  .gameList > a:nth-child(8n) {
+    background-color: rgba(0, 255, 255, 0.2);
+  }
+
+  .gamePic {
+    width: 25vw;
+  }
+}

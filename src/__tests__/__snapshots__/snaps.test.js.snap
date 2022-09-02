@@ -1,0 +1,439 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`check snapshot of pages check snapshot of details 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="detailsPage"
+      >
+        <header>
+          <a
+            href="/"
+          >
+            ‹ Back to the Home Page
+          </a>
+        </header>
+        <p>
+          Loading
+        </p>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="detailsPage"
+    >
+      <header>
+        <a
+          href="/"
+        >
+          ‹ Back to the Home Page
+        </a>
+      </header>
+      <p>
+        Loading
+      </p>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`check snapshot of pages check snapshot of home 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="homePage"
+      >
+        <div
+          class="header"
+        >
+          <select>
+            <option
+              selected=""
+              value="all-content"
+            >
+              All Content
+            </option>
+            <option
+              value="pc-content"
+            >
+              PC Content
+            </option>
+            <option
+              value="console-content"
+            >
+              Console Content
+            </option>
+            <option
+              value="mobile-content"
+            >
+              Mobile Content
+            </option>
+            <option
+              value="all-games"
+            >
+              All Full Games
+            </option>
+            <option
+              value="all-dlc"
+            >
+              All DLCs
+            </option>
+            <option
+              value="all-early"
+            >
+              All Early Access
+            </option>
+          </select>
+        </div>
+        <div
+          class="logo"
+        >
+          <img
+            alt="logo"
+            src="logo.svg"
+          />
+        </div>
+        <div
+          class="main"
+        >
+          <h3>
+            STATS
+          </h3>
+          <div
+            class="stats"
+          >
+            <div>
+              <small>
+                All
+                <br />
+                Content
+              </small>
+              <p>
+                0
+              </p>
+            </div>
+            <div>
+              <small>
+                PC
+                <br />
+                Content
+              </small>
+              <p>
+                0
+              </p>
+            </div>
+            <div>
+              <small>
+                Console
+                <br />
+                Content
+              </small>
+              <p>
+                0
+              </p>
+            </div>
+            <div>
+              <small>
+                Mobile
+                <br />
+                Content
+              </small>
+              <p>
+                0
+              </p>
+            </div>
+            <div>
+              <small>
+                Full
+                <br />
+                games
+              </small>
+              <p>
+                0
+              </p>
+            </div>
+            <div>
+              <small>
+                All
+                <br />
+                DLCs
+              </small>
+              <p>
+                0
+              </p>
+            </div>
+            <div>
+              <small>
+                Early
+                <br />
+                Access
+              </small>
+              <p>
+                0
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="gameList"
+        >
+          <p>
+            Loading...
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="homePage"
+    >
+      <div
+        class="header"
+      >
+        <select>
+          <option
+            selected=""
+            value="all-content"
+          >
+            All Content
+          </option>
+          <option
+            value="pc-content"
+          >
+            PC Content
+          </option>
+          <option
+            value="console-content"
+          >
+            Console Content
+          </option>
+          <option
+            value="mobile-content"
+          >
+            Mobile Content
+          </option>
+          <option
+            value="all-games"
+          >
+            All Full Games
+          </option>
+          <option
+            value="all-dlc"
+          >
+            All DLCs
+          </option>
+          <option
+            value="all-early"
+          >
+            All Early Access
+          </option>
+        </select>
+      </div>
+      <div
+        class="logo"
+      >
+        <img
+          alt="logo"
+          src="logo.svg"
+        />
+      </div>
+      <div
+        class="main"
+      >
+        <h3>
+          STATS
+        </h3>
+        <div
+          class="stats"
+        >
+          <div>
+            <small>
+              All
+              <br />
+              Content
+            </small>
+            <p>
+              0
+            </p>
+          </div>
+          <div>
+            <small>
+              PC
+              <br />
+              Content
+            </small>
+            <p>
+              0
+            </p>
+          </div>
+          <div>
+            <small>
+              Console
+              <br />
+              Content
+            </small>
+            <p>
+              0
+            </p>
+          </div>
+          <div>
+            <small>
+              Mobile
+              <br />
+              Content
+            </small>
+            <p>
+              0
+            </p>
+          </div>
+          <div>
+            <small>
+              Full
+              <br />
+              games
+            </small>
+            <p>
+              0
+            </p>
+          </div>
+          <div>
+            <small>
+              All
+              <br />
+              DLCs
+            </small>
+            <p>
+              0
+            </p>
+          </div>
+          <div>
+            <small>
+              Early
+              <br />
+              Access
+            </small>
+            <p>
+              0
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="gameList"
+      >
+        <p>
+          Loading...
+        </p>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
