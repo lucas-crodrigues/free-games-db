@@ -21,7 +21,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
  ## Video Preview
 
- [Loom Video](https://www.loom.com/share/bfc5132e16bb4bde89f4cc427a3bb289)
+ [Loom Video](https://www.loom.com/share/2f8f92dd050c461fb21e62a77c3b36a6)
 
  ## Getting Started
 
