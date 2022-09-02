@@ -30,7 +30,7 @@ function Home() {
 
   let content;
   if (status === 'loading') {
-    content = <p>Loading</p>;
+    content = <p>Loading...</p>;
   }
   if (status === 'succeeded') {
     content = filteredGames.map((game) => (

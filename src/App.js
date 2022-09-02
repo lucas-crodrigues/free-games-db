@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import {
   BrowserRouter as Router, Routes, Route,
 } from 'react-router-dom';
@@ -14,8 +15,8 @@ function App() {
           <Route path="/:id" exact element={<Details />} />
         </Routes>
       </Router>
-      <small>
-        Powered by:
+      <small className="credits">
+        Powered by:&nbsp;
         <a href="https://www.gamerpower.com/api-read" rel="noopener noreferrer" target="_blank">GamerPower</a>
       </small>
     </div>

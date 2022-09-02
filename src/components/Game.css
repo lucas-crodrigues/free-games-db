@@ -1,19 +1,16 @@
 .gameCard {
   display: flex;
   flex-direction: column;
-  background-color: #28282880;
-  border: 1px solid white;
-  padding: 0 0.5rem 0.5rem 0.5rem;
-  height: auto;
-  width: 19rem;
-  margin: 0.5rem;
   transition: all 0.5s;
+  height: 100%;
 }
 
 .gameTitle {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .gameType {
@@ -36,8 +33,7 @@
 }
 
 .gamePic {
-  height: 10rem;
-  width: 20rem;
+  width: 50vw;
 }
 
 .info {

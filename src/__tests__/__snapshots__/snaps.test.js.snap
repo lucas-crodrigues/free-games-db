@@ -6,313 +6,35 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="header"
+        class="detailsPage"
       >
-        <a
-          aria-current="page"
-          class="active"
-          href="/"
-        >
-          ‹
-        </a>
-        <h1>
-          Free Games DB
-        </h1>
-      </div>
-      <div
-        class="pageTitle"
-      >
-        <img
-          alt="logo"
-          src="gameimg"
-        />
-        <h2>
-          All Content
-        </h2>
-      </div>
-      <div
-        class="filters"
-      >
-        <a
-          class=""
-          href="/games"
-        >
-          All Free Content
-        </a>
-        <a
-          class=""
-          href="/pc"
-        >
-          All PC Content
-        </a>
-        <a
-          class=""
-          href="/console"
-        >
-          All Console Content
-        </a>
-        <a
-          class=""
-          href="/mobile"
-        >
-          All Mobile Content
-        </a>
-      </div>
-      <div
-        class="gamesList"
-      >
-        <div
-          class="gameCard"
-        >
-          <div
-            class="gameTitle"
+        <header>
+          <a
+            href="/"
           >
-            <a
-              href="https://www.gamerpower.com/open/call-of-duty-warzone-kf-weapon-charm-key-giveaway"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <img
-                alt="Game Call of Duty: Warzone KF Weapon Charm Key Giveaway"
-                class="gamePic"
-                src="https://www.gamerpower.com/offers/1b/630e76b5dd23c.jpg"
-              />
-              Call of Duty: Warzone KF Weapon Charm Key Giveaway
-            </a>
-            <p
-              class="gameType"
-              id="DLC"
-            >
-              DLC
-            </p>
-          </div>
-          <details
-            class="info"
-          >
-            <summary>
-              More Info
-            </summary>
-            <p
-              style="white-space: pre-wrap;"
-            >
-              1. Download and Install the Steelseries GG software.
-2. Log in to the app, go to the "Giveaway" section and click the button to unlock your key.
-3. Follow the giveaway instructions to redeem your key.
-            </p>
-            <small>
-              Works with:
-              PC
-            </small>
-            <small>
-              Ends at:
-              N/A
-            </small>
-          </details>
-        </div>
-        <div
-          class="gameCard"
-        >
-          <div
-            class="gameTitle"
-          >
-            <a
-              href="https://www.gamerpower.com/open/dead-by-daylight-free-100k-bloodpoints-key"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <img
-                alt="Game Dead by Daylight: Free 100k Bloodpoints Key"
-                class="gamePic"
-                src="https://www.gamerpower.com/offers/1b/630e74876116e.jpg"
-              />
-              Dead by Daylight: Free 100k Bloodpoints Key
-            </a>
-            <p
-              class="gameType"
-              id="DLC"
-            >
-              DLC
-            </p>
-          </div>
-          <details
-            class="info"
-          >
-            <summary>
-              More Info
-            </summary>
-            <p
-              style="white-space: pre-wrap;"
-            >
-              1. Download and Install the Steelseries GG software.
-2. Log in to the app, go to the "Giveaway" section and click the button to unlock your key.
-3. Start the game and redeem the code in-game by going to the Store, clicking "Redeem" and enter your code.
-            </p>
-            <small>
-              Works with:
-              PC
-            </small>
-            <small>
-              Ends at:
-              N/A
-            </small>
-          </details>
-        </div>
+            ‹ Back to the Home Page
+          </a>
+        </header>
+        <p>
+          Loading
+        </p>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="header"
+      class="detailsPage"
     >
-      <a
-        aria-current="page"
-        class="active"
-        href="/"
-      >
-        ‹
-      </a>
-      <h1>
-        Free Games DB
-      </h1>
-    </div>
-    <div
-      class="pageTitle"
-    >
-      <img
-        alt="logo"
-        src="gameimg"
-      />
-      <h2>
-        All Content
-      </h2>
-    </div>
-    <div
-      class="filters"
-    >
-      <a
-        class=""
-        href="/games"
-      >
-        All Free Content
-      </a>
-      <a
-        class=""
-        href="/pc"
-      >
-        All PC Content
-      </a>
-      <a
-        class=""
-        href="/console"
-      >
-        All Console Content
-      </a>
-      <a
-        class=""
-        href="/mobile"
-      >
-        All Mobile Content
-      </a>
-    </div>
-    <div
-      class="gamesList"
-    >
-      <div
-        class="gameCard"
-      >
-        <div
-          class="gameTitle"
+      <header>
+        <a
+          href="/"
         >
-          <a
-            href="https://www.gamerpower.com/open/call-of-duty-warzone-kf-weapon-charm-key-giveaway"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <img
-              alt="Game Call of Duty: Warzone KF Weapon Charm Key Giveaway"
-              class="gamePic"
-              src="https://www.gamerpower.com/offers/1b/630e76b5dd23c.jpg"
-            />
-            Call of Duty: Warzone KF Weapon Charm Key Giveaway
-          </a>
-          <p
-            class="gameType"
-            id="DLC"
-          >
-            DLC
-          </p>
-        </div>
-        <details
-          class="info"
-        >
-          <summary>
-            More Info
-          </summary>
-          <p
-            style="white-space: pre-wrap;"
-          >
-            1. Download and Install the Steelseries GG software.
-2. Log in to the app, go to the "Giveaway" section and click the button to unlock your key.
-3. Follow the giveaway instructions to redeem your key.
-          </p>
-          <small>
-            Works with:
-            PC
-          </small>
-          <small>
-            Ends at:
-            N/A
-          </small>
-        </details>
-      </div>
-      <div
-        class="gameCard"
-      >
-        <div
-          class="gameTitle"
-        >
-          <a
-            href="https://www.gamerpower.com/open/dead-by-daylight-free-100k-bloodpoints-key"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <img
-              alt="Game Dead by Daylight: Free 100k Bloodpoints Key"
-              class="gamePic"
-              src="https://www.gamerpower.com/offers/1b/630e74876116e.jpg"
-            />
-            Dead by Daylight: Free 100k Bloodpoints Key
-          </a>
-          <p
-            class="gameType"
-            id="DLC"
-          >
-            DLC
-          </p>
-        </div>
-        <details
-          class="info"
-        >
-          <summary>
-            More Info
-          </summary>
-          <p
-            style="white-space: pre-wrap;"
-          >
-            1. Download and Install the Steelseries GG software.
-2. Log in to the app, go to the "Giveaway" section and click the button to unlock your key.
-3. Start the game and redeem the code in-game by going to the Store, clicking "Redeem" and enter your code.
-          </p>
-          <small>
-            Works with:
-            PC
-          </small>
-          <small>
-            Ends at:
-            N/A
-          </small>
-        </details>
-      </div>
+          ‹ Back to the Home Page
+        </a>
+      </header>
+      <p>
+        Loading
+      </p>
     </div>
   </div>,
   "debug": [Function],
@@ -380,12 +102,44 @@ Object {
         <div
           class="header"
         >
-          <div
-            class="invisible"
-          />
-          <h1>
-            Free Games DB
-          </h1>
+          <select>
+            <option
+              selected=""
+              value="all-content"
+            >
+              All Content
+            </option>
+            <option
+              value="pc-content"
+            >
+              PC Content
+            </option>
+            <option
+              value="console-content"
+            >
+              Console Content
+            </option>
+            <option
+              value="mobile-content"
+            >
+              Mobile Content
+            </option>
+            <option
+              value="all-games"
+            >
+              All Full Games
+            </option>
+            <option
+              value="all-dlc"
+            >
+              All DLCs
+            </option>
+            <option
+              value="all-early"
+            >
+              All Early Access
+            </option>
+          </select>
         </div>
         <div
           class="logo"
@@ -408,40 +162,40 @@ Object {
               <small>
                 All
                 <br />
-                games
+                Content
               </small>
               <p>
-                2
+                0
               </p>
             </div>
             <div>
               <small>
                 PC
                 <br />
-                games
+                Content
               </small>
               <p>
-                2
+                0
               </p>
             </div>
             <div>
               <small>
                 Console
                 <br />
-                games
+                Content
               </small>
               <p>
-                2
+                0
               </p>
             </div>
             <div>
               <small>
                 Mobile
                 <br />
-                games
+                Content
               </small>
               <p>
-                2
+                0
               </p>
             </div>
             <div>
@@ -451,7 +205,7 @@ Object {
                 games
               </small>
               <p>
-                2
+                0
               </p>
             </div>
             <div>
@@ -461,7 +215,7 @@ Object {
                 DLCs
               </small>
               <p>
-                2
+                0
               </p>
             </div>
             <div>
@@ -471,62 +225,17 @@ Object {
                 Access
               </small>
               <p>
-                2
+                0
               </p>
             </div>
           </div>
         </div>
         <div
-          class="pages"
+          class="gameList"
         >
-          <div
-            class="gameContent page"
-          >
-            <a
-              class="pageLink"
-              href="/games"
-            >
-              All Free Content:
-               
-              2
-            </a>
-          </div>
-          <div
-            class="pcContent page"
-          >
-            <a
-              class="pageLink"
-              href="/pc"
-            >
-              All PC Content:
-               
-              2
-            </a>
-          </div>
-          <div
-            class="consoleContent page"
-          >
-            <a
-              class="pageLink"
-              href="/console"
-            >
-              All Console Content:
-               
-              2
-            </a>
-          </div>
-          <div
-            class="mobileContent page"
-          >
-            <a
-              class="pageLink"
-              href="/mobile"
-            >
-              All Mobile Content:
-               
-              2
-            </a>
-          </div>
+          <p>
+            Loading...
+          </p>
         </div>
       </div>
     </div>
@@ -538,12 +247,44 @@ Object {
       <div
         class="header"
       >
-        <div
-          class="invisible"
-        />
-        <h1>
-          Free Games DB
-        </h1>
+        <select>
+          <option
+            selected=""
+            value="all-content"
+          >
+            All Content
+          </option>
+          <option
+            value="pc-content"
+          >
+            PC Content
+          </option>
+          <option
+            value="console-content"
+          >
+            Console Content
+          </option>
+          <option
+            value="mobile-content"
+          >
+            Mobile Content
+          </option>
+          <option
+            value="all-games"
+          >
+            All Full Games
+          </option>
+          <option
+            value="all-dlc"
+          >
+            All DLCs
+          </option>
+          <option
+            value="all-early"
+          >
+            All Early Access
+          </option>
+        </select>
       </div>
       <div
         class="logo"
@@ -566,40 +307,40 @@ Object {
             <small>
               All
               <br />
-              games
+              Content
             </small>
             <p>
-              2
+              0
             </p>
           </div>
           <div>
             <small>
               PC
               <br />
-              games
+              Content
             </small>
             <p>
-              2
+              0
             </p>
           </div>
           <div>
             <small>
               Console
               <br />
-              games
+              Content
             </small>
             <p>
-              2
+              0
             </p>
           </div>
           <div>
             <small>
               Mobile
               <br />
-              games
+              Content
             </small>
             <p>
-              2
+              0
             </p>
           </div>
           <div>
@@ -609,7 +350,7 @@ Object {
               games
             </small>
             <p>
-              2
+              0
             </p>
           </div>
           <div>
@@ -619,7 +360,7 @@ Object {
               DLCs
             </small>
             <p>
-              2
+              0
             </p>
           </div>
           <div>
@@ -629,431 +370,17 @@ Object {
               Access
             </small>
             <p>
-              2
+              0
             </p>
           </div>
         </div>
       </div>
       <div
-        class="pages"
+        class="gameList"
       >
-        <div
-          class="gameContent page"
-        >
-          <a
-            class="pageLink"
-            href="/games"
-          >
-            All Free Content:
-             
-            2
-          </a>
-        </div>
-        <div
-          class="pcContent page"
-        >
-          <a
-            class="pageLink"
-            href="/pc"
-          >
-            All PC Content:
-             
-            2
-          </a>
-        </div>
-        <div
-          class="consoleContent page"
-        >
-          <a
-            class="pageLink"
-            href="/console"
-          >
-            All Console Content:
-             
-            2
-          </a>
-        </div>
-        <div
-          class="mobileContent page"
-        >
-          <a
-            class="pageLink"
-            href="/mobile"
-          >
-            All Mobile Content:
-             
-            2
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>,
-  "debug": [Function],
-  "findAllByAltText": [Function],
-  "findAllByDisplayValue": [Function],
-  "findAllByLabelText": [Function],
-  "findAllByPlaceholderText": [Function],
-  "findAllByRole": [Function],
-  "findAllByTestId": [Function],
-  "findAllByText": [Function],
-  "findAllByTitle": [Function],
-  "findByAltText": [Function],
-  "findByDisplayValue": [Function],
-  "findByLabelText": [Function],
-  "findByPlaceholderText": [Function],
-  "findByRole": [Function],
-  "findByTestId": [Function],
-  "findByText": [Function],
-  "findByTitle": [Function],
-  "getAllByAltText": [Function],
-  "getAllByDisplayValue": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getByAltText": [Function],
-  "getByDisplayValue": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByDisplayValue": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryByAltText": [Function],
-  "queryByDisplayValue": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
-`;
-
-exports[`check snapshot of pages check snapshot of home 2`] = `
-Object {
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      <div
-        class="header"
-      >
-        <a
-          aria-current="page"
-          class="active"
-          href="/"
-        >
-          ‹
-        </a>
-        <h1>
-          Free Games DB
-        </h1>
-      </div>
-      <div
-        class="pageTitle"
-      >
-        <img
-          alt="logo"
-          src="gameimg"
-        />
-        <h2>
-          All Content
-        </h2>
-      </div>
-      <div
-        class="filters"
-      >
-        <a
-          class=""
-          href="/games"
-        >
-          All Free Content
-        </a>
-        <a
-          class=""
-          href="/pc"
-        >
-          All PC Content
-        </a>
-        <a
-          class=""
-          href="/console"
-        >
-          All Console Content
-        </a>
-        <a
-          class=""
-          href="/mobile"
-        >
-          All Mobile Content
-        </a>
-      </div>
-      <div
-        class="gamesList"
-      >
-        <div
-          class="gameCard"
-        >
-          <div
-            class="gameTitle"
-          >
-            <a
-              href="https://www.gamerpower.com/open/call-of-duty-warzone-kf-weapon-charm-key-giveaway"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <img
-                alt="Game Call of Duty: Warzone KF Weapon Charm Key Giveaway"
-                class="gamePic"
-                src="https://www.gamerpower.com/offers/1b/630e76b5dd23c.jpg"
-              />
-              Call of Duty: Warzone KF Weapon Charm Key Giveaway
-            </a>
-            <p
-              class="gameType"
-              id="DLC"
-            >
-              DLC
-            </p>
-          </div>
-          <details
-            class="info"
-          >
-            <summary>
-              More Info
-            </summary>
-            <p
-              style="white-space: pre-wrap;"
-            >
-              1. Download and Install the Steelseries GG software.
-2. Log in to the app, go to the "Giveaway" section and click the button to unlock your key.
-3. Follow the giveaway instructions to redeem your key.
-            </p>
-            <small>
-              Works with:
-              PC
-            </small>
-            <small>
-              Ends at:
-              N/A
-            </small>
-          </details>
-        </div>
-        <div
-          class="gameCard"
-        >
-          <div
-            class="gameTitle"
-          >
-            <a
-              href="https://www.gamerpower.com/open/dead-by-daylight-free-100k-bloodpoints-key"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <img
-                alt="Game Dead by Daylight: Free 100k Bloodpoints Key"
-                class="gamePic"
-                src="https://www.gamerpower.com/offers/1b/630e74876116e.jpg"
-              />
-              Dead by Daylight: Free 100k Bloodpoints Key
-            </a>
-            <p
-              class="gameType"
-              id="DLC"
-            >
-              DLC
-            </p>
-          </div>
-          <details
-            class="info"
-          >
-            <summary>
-              More Info
-            </summary>
-            <p
-              style="white-space: pre-wrap;"
-            >
-              1. Download and Install the Steelseries GG software.
-2. Log in to the app, go to the "Giveaway" section and click the button to unlock your key.
-3. Start the game and redeem the code in-game by going to the Store, clicking "Redeem" and enter your code.
-            </p>
-            <small>
-              Works with:
-              PC
-            </small>
-            <small>
-              Ends at:
-              N/A
-            </small>
-          </details>
-        </div>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="header"
-    >
-      <a
-        aria-current="page"
-        class="active"
-        href="/"
-      >
-        ‹
-      </a>
-      <h1>
-        Free Games DB
-      </h1>
-    </div>
-    <div
-      class="pageTitle"
-    >
-      <img
-        alt="logo"
-        src="gameimg"
-      />
-      <h2>
-        All Content
-      </h2>
-    </div>
-    <div
-      class="filters"
-    >
-      <a
-        class=""
-        href="/games"
-      >
-        All Free Content
-      </a>
-      <a
-        class=""
-        href="/pc"
-      >
-        All PC Content
-      </a>
-      <a
-        class=""
-        href="/console"
-      >
-        All Console Content
-      </a>
-      <a
-        class=""
-        href="/mobile"
-      >
-        All Mobile Content
-      </a>
-    </div>
-    <div
-      class="gamesList"
-    >
-      <div
-        class="gameCard"
-      >
-        <div
-          class="gameTitle"
-        >
-          <a
-            href="https://www.gamerpower.com/open/call-of-duty-warzone-kf-weapon-charm-key-giveaway"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <img
-              alt="Game Call of Duty: Warzone KF Weapon Charm Key Giveaway"
-              class="gamePic"
-              src="https://www.gamerpower.com/offers/1b/630e76b5dd23c.jpg"
-            />
-            Call of Duty: Warzone KF Weapon Charm Key Giveaway
-          </a>
-          <p
-            class="gameType"
-            id="DLC"
-          >
-            DLC
-          </p>
-        </div>
-        <details
-          class="info"
-        >
-          <summary>
-            More Info
-          </summary>
-          <p
-            style="white-space: pre-wrap;"
-          >
-            1. Download and Install the Steelseries GG software.
-2. Log in to the app, go to the "Giveaway" section and click the button to unlock your key.
-3. Follow the giveaway instructions to redeem your key.
-          </p>
-          <small>
-            Works with:
-            PC
-          </small>
-          <small>
-            Ends at:
-            N/A
-          </small>
-        </details>
-      </div>
-      <div
-        class="gameCard"
-      >
-        <div
-          class="gameTitle"
-        >
-          <a
-            href="https://www.gamerpower.com/open/dead-by-daylight-free-100k-bloodpoints-key"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <img
-              alt="Game Dead by Daylight: Free 100k Bloodpoints Key"
-              class="gamePic"
-              src="https://www.gamerpower.com/offers/1b/630e74876116e.jpg"
-            />
-            Dead by Daylight: Free 100k Bloodpoints Key
-          </a>
-          <p
-            class="gameType"
-            id="DLC"
-          >
-            DLC
-          </p>
-        </div>
-        <details
-          class="info"
-        >
-          <summary>
-            More Info
-          </summary>
-          <p
-            style="white-space: pre-wrap;"
-          >
-            1. Download and Install the Steelseries GG software.
-2. Log in to the app, go to the "Giveaway" section and click the button to unlock your key.
-3. Start the game and redeem the code in-game by going to the Store, clicking "Redeem" and enter your code.
-          </p>
-          <small>
-            Works with:
-            PC
-          </small>
-          <small>
-            Ends at:
-            N/A
-          </small>
-        </details>
+        <p>
+          Loading...
+        </p>
       </div>
     </div>
   </div>,
