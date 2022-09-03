@@ -21,7 +21,7 @@ function Details() {
     content = <p>Loading</p>;
   }
   if (status === 'succeeded') {
-    const gamesArr = gamesD.filter((game) => game.id.toString().includes(params.id.toString()));
+    const gamesArr = gamesD.filter((game) => game.id.toString() === params.id.toString());
     const game = gamesArr[0];
     content = (
       <div className="game-details">
