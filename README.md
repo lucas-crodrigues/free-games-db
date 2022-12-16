@@ -1,8 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 # Free Games DB
 
-This is the Free Games DB (Capstone Project) app initialized in the fifth week of the third module in the Microverse program. It was done using the GamerPower API. <br>
-On this website you can check every game and dlc currently available for free, across all major platforms. <br>
+This is the Free Games DB (Capstone Project) app initialized in the fifth week of the third module in the Microverse program. It was done using the GamerPower API.
+On this website, you can check every game and DLC available for free, across all major platforms.
+<br> 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Built With
