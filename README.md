@@ -18,7 +18,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live Demo
 
- [Free Games DB](https://peppy-smakager-d62680.netlify.app/)
+ [Free Games DB](https://free-games-db.netlify.app/)
 
  ## Video Preview
 
