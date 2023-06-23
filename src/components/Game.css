@@ -33,7 +33,7 @@
 }
 
 .gamePic {
-  width: 50vw;
+  width: -webkit-fill-available;
 }
 
 .info {
