@@ -12,6 +12,7 @@
 .main {
   display: flex;
   flex-direction: column;
+  padding-top: 1.5rem;
 }
 
 .main h3 {
