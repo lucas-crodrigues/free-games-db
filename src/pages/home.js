@@ -12,7 +12,6 @@ import {
   filterDLC,
   filterEarly,
 } from '../redux/games/fetchGames';
-import logo from '../art/logo.svg';
 import './home.css';
 
 function Home() {
@@ -95,9 +94,6 @@ function Home() {
             <option value="all-dlc">All DLCs</option>
             <option value="all-early">All Early Access</option>
           </select>
-        </div>
-        <div className="logo">
-          <img src={logo} alt="logo" />
         </div>
         <div className="main">
           <h3>STATS</h3>
