@@ -97,63 +97,63 @@ function Home() {
         </div>
         <div className="main">
           <h3>STATS</h3>
-          <div className="stats">
-            <div>
+          <div className="stats" defaultValue={filter}>
+            <button type="button" onClick={handleChange} value="all-content">
               <small>
                 All
                 <br />
                 Content
               </small>
               <p>{games.length}</p>
-            </div>
-            <div>
+            </button>
+            <button type="button" onClick={handleChange} value="pc-content">
               <small>
                 PC
                 <br />
                 Content
               </small>
               <p>{pcGames.length}</p>
-            </div>
-            <div>
+            </button>
+            <button type="button" onClick={handleChange} value="console-content">
               <small>
                 Console
                 <br />
                 Content
               </small>
               <p>{consoleGames.length}</p>
-            </div>
-            <div>
+            </button>
+            <button type="button" onClick={handleChange} value="mobile-content">
               <small>
                 Mobile
                 <br />
                 Content
               </small>
               <p>{mobileGames.length}</p>
-            </div>
-            <div>
+            </button>
+            <button type="button" onClick={handleChange} value="all-games">
               <small>
                 Full
                 <br />
                 games
               </small>
               <p>{allGames.length}</p>
-            </div>
-            <div>
+            </button>
+            <button type="button" onClick={handleChange} value="all-dlc">
               <small>
                 All
                 <br />
                 DLCs
               </small>
               <p>{allDLC.length}</p>
-            </div>
-            <div>
+            </button>
+            <button type="button" onClick={handleChange} value="all-early">
               <small>
                 Early
                 <br />
                 Access
               </small>
               <p>{allEarly.length}</p>
-            </div>
+            </button>
           </div>
         </div>
         <div className="gameList">{content}</div>
